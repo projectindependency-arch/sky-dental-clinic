@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Dental Clinic | Elevating Oral Artistry</title>
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="fixed-nav">
+        <div class="nav-logo">
+            <span class="logo-text">SKY DENTAL</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero">The Clinic</a>
+            <a href="#transparency">Transparency Hub</a>
+            <a href="#booking">Concierge</a>
+        </div>
+        <a href="#booking" class="btn-cta-nav">Reserve Studio Time</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-container">
+        <div class="hero-content">
+            <div class="hero-text-block">
+                <div class="badge-premium">
+                    <i data-lucide="star"></i> Indore's Premier Dental Studio
+                </div>
+                <h1 class="hero-title">Elevating <br><span class="italic-gold">Oral Artistry</span> & Care.</h1>
+                <p class="hero-description">Modern, trustworthy, premium, and family-friendly dentistry. Led by Dr. Aditya Yadav and Dr. Neha Yadav, we combine advanced clinical excellence with architectural luxury.</p>
+                
+                <div class="hero-actions">
+                    <a href="#booking" class="btn-primary">Book Consultation</a>
+                </div>
+
+                <div class="doctors-grid">
+                    <div class="doc-card">
+                        <p class="doc-name">Dr. Aditya Yadav</p>
+                        <p class="doc-deg">BDS, MDS (Orthodontics)</p>
+                        <p class="doc-spec">12+ Yrs | Aligners, Lasers</p>
+                    </div>
+                    <div class="doc-card">
+                        <p class="doc-name">Dr. Neha Yadav</p>
+                        <p class="doc-deg">BDS, MDS (Pediatric)</p>
+                        <p class="doc-spec">Child Care, Root Canals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSPARENCY HUB (Quiz & Calculator) -->
+    <section id="transparency" class="transparency-section">
+        <div class="section-header">
+            <span class="section-badge text-gold">Radical Honesty</span>
+            <h2 class="section-title">The Transparency Hub</h2>
+            <p class="section-subtitle">No obscured billing. Direct financial architecting and digital diagnostics.</p>
+        </div>
+
+        <div class="dual-interactive-grid">
+            <!-- Smile Assessment Quiz -->
+            <div class="card-dark">
+                <div class="card-header-line">
+                    <span class="header-title-text text-gold">Smile Assessment</span>
+                    <span id="quiz-step">Step 1 of 3</span>
+                </div>
+                
+                <div id="quiz-container" class="quiz-dynamic-block">
+                    <!-- Quiz injected via JS -->
+                </div>
+
+                <div id="quiz-result" class="hidden">
+                    <h3 class="result-title text-gold">Assessment Complete</h3>
+                    <p class="result-text">Based on your profile, our specialists will craft a customized clinical pathway during your consultation.</p>
+                    <button id="btn-reset-quiz" class="btn-secondary mt-4">Retake Assessment</button>
+                </div>
+            </div>
+
+            <!-- Fee Calculator -->
+            <div class="card-white">
+                <div class="card-header-line">
+                    <span class="header-title-text">Fee Architect (0% EMI)</span>
+                    <span class="badge-emerald-tag">Standard Consult: ₹500</span>
+                </div>
+
+                <div id="procedures-list" class="procedures-stack">
+                    <!-- Procedures injected via JS -->
+                </div>
+
+                <div class="math-output-box">
+                    <div class="math-row">
+                        <span>Total Investment</span>
+                        <span id="calc-total" class="text-gold font-bold">₹0</span>
+                    </div>
+                    
+                    <div class="emi-section">
+                        <label class="emi-toggle"><input type="checkbox" id="emi-checkbox" checked> Enable 0% EMI (Partnered with Bajaj Finserv & HDFC)</label>
+                        <div id="emi-options" class="tenure-row">
+                            <button class="btn-tenure" data-months="3">3 Mo</button>
+                            <button class="btn-tenure" data-months="6">6 Mo</button>
+                            <button class="btn-tenure" data-months="9">9 Mo</button>
+                            <button class="btn-tenure active" data-months="12">12 Mo</button>
+                        </div>
+                        <div class="math-row mt-2">
+                            <span>Monthly</span>
+                            <span id="calc-monthly" class="text-gold font-bold text-xl">₹0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONCIERGE BOOKING & LOCATION -->
+    <section id="booking" class="booking-section">
+        <div class="booking-composite-box">
+            <!-- Location Details -->
+            <div class="booking-details-panel">
+                <h3 class="concierge-heading">Studio <span class="italic-gold">Logistics</span></h3>
+                
+                <div class="milestone-row">
+                    <i data-lucide="map-pin" class="text-gold"></i>
+                    <div>
+                        <h4>Vijay Nagar, Indore</h4>
+                        <p>Suite 204, 2nd Floor, Apollo Premier Building, Vijay Nagar Square, Opposite Court Marriott.</p>
+                        <a href="https://maps.google.com/?q=Vijay+Nagar+Square+Indore" target="_blank" class="map-link">Open in Google Maps &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="milestone-row mt-4">
+                    <i data-lucide="clock" class="text-gold"></i>
+                    <div>
+                        <h4>Operating Hours</h4>
+                        <p>Mon - Sat: 10:00 AM – 2:00 PM | 5:00 PM – 9:00 PM<br>Sunday: Closed (Emergency Only)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="booking-form-panel">
+                <form id="booking-form" class="form-stack">
+                    <h3 class="form-title">Reserve Your Time</h3>
+                    <input type="text" placeholder="Full Name" required class="form-input">
+                    <input type="tel" placeholder="Mobile Number" required class="form-input">
+                    <select required class="form-input">
+                        <option value="">Select Primary Concern...</option>
+                        <option value="Aligners">SkyAlign Clear Aligners</option>
+                        <option value="Crowns">Zirconia Crowns</option>
+                        <option value="Pain">Painless Root Canal</option>
+                        <option value="Routine">Signature Scaling / Consult</option>
+                    </select>
+                    <button type="submit" class="btn-submit">Submit Request</button>
+                </form>
+                <div id="booking-success" class="hidden text-center">
+                    <i data-lucide="check-circle" class="text-gold icon-large"></i>
+                    <h3>Reservation Received</h3>
+                    <p>Our concierge will contact you shortly to confirm your slot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOBILE FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/910000000000" class="mobile-whatsapp-fab" target="_blank">
+        <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span>WhatsApp Us</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
