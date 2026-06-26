@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <title>Premium Dental Clinic</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="fixed-theme-bg">
+  <img alt="Fixed Background Theme" src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmlnaHQlMjBtb2Rlcm4lMjBkZW50YWwlMjBjbGluaWMlMjBuYXR1cmFsJTIwbGlnaHR8ZW58MXx8fHwxNzgyMTc5ODg4fDA&ixlib=rb-4.1.0&q=80&w=1080">
+  <div class="overlay"></div>
+</div>
+
+<div class="scroll-snap-wrapper" id="main-scroll-wrapper">
+
+  <section class="hero-section">
+    <div class="hero-background">
+      <div class="hero-glow"></div>
+      <div class="light-sweep"></div>
+      <div class="floating-orbs" id="heroOrbs"></div>
+      <div class="light-particles" id="heroParticles"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="badge">
+          <span>Premium Dental Care Since 2015</span>
+        </div>
+        <h1 class="hero-title">
+          <div class="main-title">Ujjawal Dental Clinic</div>
+          <div class="sub-title">& Implant Centre</div>
+        </h1>
+        <p class="hero-subtitle">Where Advanced Technology Meets Compassionate Care</p>
+        <p class="hero-description">Experience world-class dental treatments in our state-of-the-art facility. Our expert team is dedicated to creating healthy, beautiful smiles that last a lifetime.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary">📅 Book Appointment</button>
+          <button class="btn btn-secondary">📞 Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-proof-section">
+    <div class="hero-background">
+      <div class="social-proof-orb-1"></div>
+      <div class="social-proof-orb-2"></div>
+      <div class="light-particles-social" id="socialParticles"></div>
+    </div>
+    <div class="container social-proof-content">
+      <div class="social-proof-header">
+        <div class="stars">
+          <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
+        </div>
+        <h2 class="social-proof-title">Patient Testimonials</h2>
+        <div class="social-proof-rating">Rating: 5.0 / 5.0 (Based on 277+ patient ratings)</div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card" data-suffix="+" data-value="277">
+          <div class="stat-value">277+</div>
+          <div class="stat-label">Happy Patients</div>
+        </div>
+        <div class="stat-card" data-decimal="true" data-value="5.0">
+          <div class="stat-value">5.0</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+        <div class="stat-card" data-suffix="%" data-value="100">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">P</div>
+            <div class="testimonial-meta">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">"Good RCT, advanced dental treatment, timely treatment with no pain, and very nice staff."</p>
+              <div class="author-name">— Princy</div>
+              <div class="author-role">Patient</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">D</div>
+            <div class="testimonial-meta">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">"A great experience... includes a friendly and professional staff, clear explanations of treatment, a clean and comfortable environment, and skilled dentists."</p>
+              <div class="author-name">— Dheeraj Dewangan</div>
+              <div class="author-role">Patient</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="premium-carousel-section">
+    <div class="service-background">
+      <div class="service-glow"></div>
+    </div>
+    <div class="container premium-carousel-content">
+      <div class="premium-card" id="carouselCard">
+        <div class="category-nav">
+          <button class="nav-arrow" id="prevCategory">❮</button>
+          <div class="category-info">
+            <div class="category-icon" id="categoryIcon">⭐</div>
+            <h3 class="category-title" id="categoryTitle">Advanced Treatments</h3>
+          </div>
+          <button class="nav-arrow" id="nextCategory">❯</button>
+        </div>
+        <div class="category-dots" id="categoryDots"></div>
+        <div class="service-content-area">
+          <div class="service-card-premium" id="serviceCard">
+            <div class="service-icon-large" id="serviceIcon">⭐</div>
+            <h4 class="service-name-premium" id="serviceName">Surgical Wisdom Tooth Removal</h4>
+            <p class="service-subtitle-premium" id="serviceSubtitle">Expert Care</p>
+            <div class="service-divider-premium"></div>
+            <p style="color: #6b7280; margin-bottom: 0.5rem;">Starting from</p>
+            <div class="price-premium" id="servicePrice" style="margin-bottom: 2rem;">₹2,500 - ₹5,000</div>
+            <button class="service-btn-premium">Book Appointment</button>
+          </div>
+        </div>
+        <div class="item-nav">
+          <button class="nav-arrow-small" id="prevItem">❮</button>
+          <div class="item-dots" id="itemDots"></div>
+          <button class="nav-arrow-small" id="nextItem">❯</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-proof-section">
+    <div class="hero-background">
+      <div class="social-proof-orb-1" style="top: 10rem; left: 5rem; width: 20rem; height: 20rem; opacity: 0.25;"></div>
+      <div class="social-proof-orb-2" style="bottom: 2rem; right: 8rem; width: 18rem; height: 18rem; opacity: 0.2;"></div>
+    </div>
+    <div class="container social-proof-content">
+      <div class="social-proof-header">
+        <h2 class="social-proof-title">Why Patients Choose Dr. Arjun Sharma</h2>
+        <p class="social-proof-rating" style="max-width: 36rem; margin: 0 auto; font-size: 1.125rem; color: rgba(255, 255, 255, 0.9); font-weight: 400;">
+          Over 20 years of clinical medical excellence intersecting advanced non-invasive diagnostics with genuine human connection.
+        </p>
+      </div>
+      <div class="premium-card" style="max-width: 1100px; margin: 0 auto 4rem; padding: clamp(1.5rem, 4vw, 2.5rem);">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-4 flex justify-center">
+            <div style="border-radius: 1rem; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 20px 40px rgba(0,0,0,0.2); max-width: 280px;">
+              <img alt="Dr. Arjun Sharma Portrait" class="w-full h-auto object-cover aspect-[0.75]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdeFEEZBM5vf7440f3r5QbxnI78kGhCuy9bT_YtJjSiU38yLXBoCcQ4jYZ9jGhXzS4OpFPto8vMtYWCnfP5uVCzLcqAVbbWX0wn1vK28MlQ9smQoxKBYT0FNAtQWZcjwG2vaAmDC23DbuSVeDi5GKnsTiAMDZgr1y2-AXYSS_wxPvDSIsQXTh7iQ4Id38k1-mbjmfOZSVmGnZceHfmWZqINgdSQqWYtpauVrfkIkRdJL_OZvEutXzZj-HUqrvuC0cBmrzZsiIDdis5">
+            </div>
+          </div>
+          <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+              <div class="service-icon-large" style="margin: 0 0 1rem 0; width: 60px; height: 60px; font-size: 1.75rem; background: rgba(8, 145, 178, 0.1); border-color: rgba(8, 145, 178, 0.25);">
+                🔬
+              </div>
+              <h3 class="category-title" style="font-size: 1.35rem; margin-bottom: 0.5rem; color: #1f2937;">
+                Advanced Digital Precision
+              </h3>
+              <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6;">
+                Leading preventative care utilizing state-of-the-art, non-invasive cardiac diagnostic protocols and complex metabolism matching for pinpoint therapeutic accuracy.
+              </p>
+            </div>
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+              <div class="service-icon-large" style="margin: 0 0 1rem 0; width: 60px; height: 60px; font-size: 1.75rem; background: rgba(8, 145, 178, 0.1); border-color: rgba(8, 145, 178, 0.25);">
+                🌿
+              </div>
+              <h3 class="category-title" style="font-size: 1.35rem; margin-bottom: 0.5rem; color: #1f2937;">
+                Anxiety-Free Care
+              </h3>
+              <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6;">
+                A comforting patient-first approach. Dr. Sharma establishes deep connections to design holistic pathways managing heart health without stress or clinical hesitation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="service-btn-premium" style="max-width: 360px; font-size: 1.05rem; padding: 1.15rem 2.5rem; border-radius: 14px;">
+          📅 Book a Consultation
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-proof-section">
+    <div class="hero-background">
+      <div class="social-proof-orb-1" style="top: 2rem; left: 10rem; width: 20rem; height: 20rem; opacity: 0.25;"></div>
+      <div class="social-proof-orb-2" style="bottom: 10rem; right: 5rem; width: 18rem; height: 18rem; opacity: 0.2;"></div>
+    </div>
+    <div class="container social-proof-content">
+      <div class="social-proof-header" style="margin-bottom: 3rem;">
+        <div class="badge">
+          <span style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; background: rgba(255,255,255,0.95); color: var(--primary-dark);">Next Steps</span>
+        </div>
+        <h2 class="social-proof-title">Begin Your Health Journey</h2>
+        <p class="social-proof-rating" style="max-width: 42rem; margin: 0 auto; font-size: 1.125rem; color: rgba(255, 255, 255, 0.9); font-weight: 400; line-height: 1.6;">
+          Experience healthcare re-engineered around your personal comfort, time, and peace of mind.
+        </p>
+      </div>
+      <div class="premium-card" style="max-width: 1000px; margin: 0 auto 3rem; padding: clamp(2rem, 4vw, 3.5rem);">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+          <div class="flex flex-col items-center md:items-start text-center md:text-left relative workflow-step">
+            <div class="service-icon-large relative z-10" style="margin: 0 0 1.5rem 0; width: 70px; height: 70px; font-size: 2rem; background: rgba(8, 145, 178, 0.1); border-color: rgba(8, 145, 178, 0.3);">
+              <span class="material-symbols-outlined" style="color: var(--primary);">calendar_today</span>
+            </div>
+            <h3 class="category-title" style="font-size: 1.4rem; margin-bottom: 0.75rem; color: #1f2937;">Digital Request</h3>
+            <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6;">Submit your preferences securely through our prioritized clinical booking platform.</p>
+          </div>
+          <div class="flex flex-col items-center md:items-start text-center md:text-left relative workflow-step">
+            <div class="service-icon-large relative z-10" style="margin: 0 0 1.5rem 0; width: 70px; height: 70px; font-size: 2rem; background: rgba(8, 145, 178, 0.1); border-color: rgba(8, 145, 178, 0.3);">
+              <span class="material-symbols-outlined" style="color: var(--primary);">call</span>
+            </div>
+            <h3 class="category-title" style="font-size: 1.4rem; margin-bottom: 0.75rem; color: #1f2937;">Concierge Discovery</h3>
+            <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6;">A medical coordinator contacts you to aggregate health records and streamline your arrival.</p>
+          </div>
+          <div class="flex flex-col items-center md:items-start text-center md:text-left relative workflow-step">
+            <div class="service-icon-large relative z-10" style="margin: 0 0 1.5rem 0; width: 70px; height: 70px; font-size: 2rem; background: rgba(8, 145, 178, 0.1); border-color: rgba(8, 145, 178, 0.3);">
+              <span class="material-symbols-outlined" style="color: var(--primary); font-variation-settings: 'FILL' 1;">auto_awesome</span>
+            </div>
+            <h3 class="category-title" style="font-size: 1.4rem; margin-bottom: 0.75rem; color: #1f2937;">Precision Care</h3>
+            <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.6;">Attend your tailored diagnostic assessment with zero waiting loops or administrative friction.</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
+        <div class="info-card">
+          <span class="material-symbols-outlined info-card-icon">location_on</span>
+          <div>
+            <p class="info-card-label">Clinic Location</p>
+            <p class="info-card-value">Ujjawal Dental Suites, Main Wing</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <span class="material-symbols-outlined info-card-icon">schedule</span>
+          <div>
+            <p class="info-card-label">Operating Hours</p>
+            <p class="info-card-value">Mon - Sat: 10:00 AM - 8:00 PM</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <span class="material-symbols-outlined info-card-icon">encrypted</span>
+          <div>
+            <p class="info-card-label">Privacy Protocol</p>
+            <p class="info-card-value">Fully encrypted, secure patient records</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center text-center">
+        <button class="service-btn-premium large-cta">
+          <span class="material-symbols-outlined">event</span>
+          Schedule Your Visit
+        </button>
+        <div class="status-pill">
+          <span class="status-dot status-dot-ping"></span>
+          <span class="status-dot status-dot-core"></span>
+          <p class="status-text">
+            System Status: <span class="status-text-strong">Priority openings are currently available for this month</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
